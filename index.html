@@ -1,45 +1,229 @@
-/* Add your custom CSS styles here */
+<!DOCTYPE html>
+<html lang="en">
 
-/* Custom CSS Flex Section */
-.custom-section {
-  background-color: #f8f8f8;
-  padding: 30px 0;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1-Contest3</title>
+    <link rel="icon" href="/assets/title.png" type="image/icon type">
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <base href="./assets/">
+</head>
 
-.custom-section .flex-item {
-  flex: 0 0 33.33%;
-  padding: 20px;
-  text-align: center;
-}
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid px-5">
+                <a class="navbar-brand" href="#">Complex UI</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Section 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Section 2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Section 3</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-.custom-section img {
-  max-width: 100%;
-  height: auto;
-}
+    <!-- carousel -->
+    <carousel>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://i.pinimg.com/564x/9d/d9/11/9dd911ce7912f37816dbf4510a4d090c.jpg" class="d-block w-100" alt="img1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide Title</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                        <button type="button" class="btn btn-primary">Call to Action</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://i.pinimg.com/564x/4e/90/b3/4e90b329fd7937e318fa074ea5d68a32.jpg" class="d-block w-100" alt="img2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide Title</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                        <button type="button" class="btn btn-primary">Call to Action</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://i.pinimg.com/564x/80/9b/2a/809b2a9b530495cad8f63af63a40b6d0.jpg" class="d-block w-100" alt="img3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide Title</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                        <button type="button" class="btn btn-primary">Call to Action</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://i.pinimg.com/564x/e3/c7/96/e3c7967f0570da18d4cf8ed6351b7428.jpg" class="d-block w-100" alt="img4">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Fourth slide Title</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                        <button type="button" class="btn btn-primary">Call to Action</button>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </carousel>
 
-/* CSS Grid Photo Gallery */
-.photo-gallery .grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
-}
+    <!-- custom container1 css section -->
+    <div class="container1 mt-5">
+        <div class="col4 px-2 text-center">
+            <img class="image" src="https://media.istockphoto.com/id/1447339991/photo/lord-shiva-statue.webp?b=1&s=170667a&w=0&k=20&c=yK_6EdG9PtLrEbQWjViCr_sPvZPnqlyYV4KNvWwETzw=" alt="">
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="col4 px-2 text-center">
+            <img class="image" src="https://media.istockphoto.com/id/1382204548/photo/lord-shiva-hindu-god-stock-photo.webp?b=1&s=170667a&w=0&k=20&c=o8IynHJ2VhwIhzQXBR9TJK3wBt-EchouwPNkVNcOh8Q=" alt="">
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="col4 px-2 text-center">
+            <img class="image" src="https://media.istockphoto.com/id/1498459479/photo/shiva-on-mountain-peak.webp?b=1&s=170667a&w=0&k=20&c=e7KPn21fNY1Zird1GKOj9cN-uGR2bkGKxidCWzAA6Hk=" alt="">
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+    </div>
 
-.photo-gallery img {
-  max-width: 100%;
-  height: auto;
-}
+    <!-- Photo gallery section -->
+    <div class="container mt-5 g-5">
+        <div class="row">
+            <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                <img src="https://i.pinimg.com/564x/60/81/87/6081871d46d3db5e03418a4f1c764942.jpg"
+                    class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
 
-/* Bootstrap Card Section */
-.card-section {
-  padding: 30px 0;
-}
+                <img src="https://i.pinimg.com/564x/50/7c/82/507c82b6002e94e2978511fa1e160083.jpg"
+                    class="w-100 shadow-1-strong rounded mb-4" alt="Wintry Mountain Landscape" />
+            </div>
 
-.card-section .card {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+            <div class="col-lg-4 mb-4 mb-lg-0">
+                <img src="https://i.pinimg.com/564x/a6/d6/90/a6d690081164643a88925a3e6c46be43.jpg"
+                    class="w-100 shadow-1-strong rounded mb-4" alt="Mountains in the Clouds" />
 
-/* Bootstrap Footer */
-.footer {
-  background-color: #f8f8f8;
-  padding: 20px 0;
-}
+                <img src="https://i.pinimg.com/564x/16/06/92/160692a1093b8c53fd8ec2997eabb469.jpg"
+                    class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
+            </div>
+
+            <div class="col-lg-4 mb-4 mb-lg-0">
+                <img src="https://i.pinimg.com/564x/16/06/92/160692a1093b8c53fd8ec2997eabb469.jpg"
+                    class="w-100 shadow-1-strong rounded mb-4" alt="Waves at Sea" />
+
+                <img src="https://i.pinimg.com/564x/73/47/5a/73475a7768295b74759b80f69ee3ec9f.jpg"
+                    class="w-100 shadow-1-strong rounded mb-4" alt="Yosemite National Park" />
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <img src="https://i.pinimg.com/564x/fc/01/9f/fc019f8415b3464c82d936e5377333a2.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="">
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <img src="https://i.pinimg.com/564x/cc/c3/27/ccc32787cd7f44e5ee978b0cc4bdcaa3.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="">
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <img src="https://i.pinimg.com/736x/e9/11/76/e9117650611c0d47369dbcc53f482ede.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="">
+                </div>
+              </div>
+        </div>
+    </div>
+
+    <!-- Card Section -->
+    <div class="container mt-5">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card shadow">
+                    <img src="https://i.pinimg.com/564x/d6/8b/dd/d68bdd1e808e29f697446e9dab3b18bf.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card Title</h5>
+                        <p class="card-text">Card Description</p>
+                        <button type="button" class="btn btn-primary">Call to Action</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow">
+                    <img src="https://i.pinimg.com/564x/d6/8b/dd/d68bdd1e808e29f697446e9dab3b18bf.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card Title</h5>
+                        <p class="card-text">Card Description</p>
+                        <button type="button" class="btn btn-primary">Call to Action</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow">
+                    <img src="https://i.pinimg.com/564x/d6/8b/dd/d68bdd1e808e29f697446e9dab3b18bf.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card Title</h5>
+                        <p class="card-text">Card Description</p>
+                        <button type="button" class="btn btn-primary">Call to Action</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="container mt-5">
+        <div class="row row-cols-1 row-cols-md-4 g-5 d-flex justify-content-around">
+            <div class="col">
+                <h4>Useful Links</h4>
+                <button type="button" class="btn btn-link">Link 1</button> <br>
+                <button type="button" class="btn btn-link">Link 2</button> <br>
+                <button type="button" class="btn btn-link">Link 3</button>
+            </div>
+            <div class="col">
+                <h4>More Links</h4>
+                <button type="button" class="btn btn-link">Link 4</button> <br>
+                <button type="button" class="btn btn-link">Link 5</button> <br>
+                <button type="button" class="btn btn-link">Link 6</button>
+            </div>
+            <div class="col">
+                <h4>Contact Us</h4>
+                <p>Email: example@example.com</p>
+                <p>Phone: +1(555) 123-4567</p>
+            </div>
+        </div>
+        <div class="row mt-3 py-3">
+            <div class="col-sm-6 px-5">
+                <p class="fw-bold">© 2023 Complex UI. All Rights Reserved</p>
+            </div>
+            <div class="col-sm-6 d-flex justify-content-end">
+                <button type="button" class="btn btn-primary">Back to Top</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>s
